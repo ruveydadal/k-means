@@ -27,7 +27,7 @@ for i in range(1,11):
 plt.plot(range(1,11),sonuclar)
 plt.show()
 
-#HİERARCHİCAL CLUSTER
+#HIERARCHICAL CLUSTER
 from sklearn.cluster import AgglomerativeClustering
 ac=AgglomerativeClustering(n_clusters=3,affinity='euclidean',linkage='ward')
 Y_tahmin=ac.fit_predict(X)
